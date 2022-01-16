@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"Keshav Sachdeva\",\r\n    \"email\":\"Keshav@gmail.com\",\r\n    \"password\":\"Hellloa\",\r\n    \"confirmPassword\":\"Hellloa\"\r\n\r\n\r\n}",
+					"raw": "{\r\n    \"username\":\"IronMan\",\r\n    \"email\":\"IronMan@gmail.com\",\r\n    \"password\":\"Hellloa\",\r\n    \"confirmPassword\":\"Hellloa\"\r\n\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,11 +20,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5000/api/auth/signin",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/auth/signin",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"auth",
@@ -41,7 +43,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"Keshav@gmail.com\",\r\n    \"password\":\"Hellloa\"\r\n}\r\n",
+					"raw": "{\r\n    \"email\":\"IronMan@gmail.com\",\r\n    \"password\":\"Hellloa\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -49,11 +51,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5000/api/auth/login",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/auth/login",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"auth",
@@ -69,11 +73,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/api/auth/logout",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/auth/logout",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"auth",
@@ -93,14 +99,16 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTJiODQwYmE3Y2RhM2FmNjRiMzlhNiIsImlhdCI6MTY0MjI2MDI2Nn0.pfyHJdSGPydzTh7_xcYhJFAUGlZsFMk2Ee_6BlcrBbU\"\r\n}"
+					"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTNmOWRmMTE4M2U5Y2ExM2QzN2QzZiIsImlhdCI6MTY0MjMzMDYxMn0.AXAAuqCheWGJzIKFBsIrKxLV0oQOT9yoHEGmKqrhqNI\"\r\n}"
 				},
 				"url": {
-					"raw": "localhost:5000/api/auth/isLoggedIn",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/auth/isLoggedIn",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"auth",
@@ -117,7 +125,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\":\"my status shivam\",\r\n    \"content\":\"I am Awesome shivam\"\r\n}",
+					"raw": "{\r\n    \"title\":\"my status \",\r\n    \"content\":\"I am IronMan\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -125,11 +133,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5000/api/createPost",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/createPost",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"createPost"
@@ -144,11 +154,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/api/getPosts/",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/getPosts/",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"getPosts",
@@ -164,11 +176,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/api/getAllUsers",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/getAllUsers",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"getAllUsers"
@@ -184,7 +198,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"postId\":\"61e33a01d6de17a8023c65fd\"\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -192,14 +206,17 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5000/api/likePost",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/likePost/61e3fa571183e9ca13d37d43",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
-						"likePost"
+						"likePost",
+						"61e3fa571183e9ca13d37d43"
 					]
 				}
 			},
@@ -212,7 +229,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"message\":\"nice comment4\",\r\n    \"postId\":\"61e33a01d6de17a8023c65fd\"\r\n}",
+					"raw": "{\r\n    \"message\":\"Hi hellloooo\"\r\n    \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -220,14 +237,17 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5000/api/commentPost",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/commentPost/61e33a01d6de17a8023c65fd",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
-						"commentPost"
+						"commentPost",
+						"61e33a01d6de17a8023c65fd"
 					]
 				}
 			},
@@ -243,7 +263,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"postId\":\"61e33a01d6de17a8023c65fd\"\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -251,14 +271,17 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5000/api/getLikes",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/getLikes/61e33a01d6de17a8023c65fd",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
-						"getLikes"
+						"getLikes",
+						"61e33a01d6de17a8023c65fd"
 					]
 				}
 			},
@@ -274,7 +297,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"postId\":\"61e33a01d6de17a8023c65fd\"\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -282,14 +305,17 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5000/api/getComments",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/getComments/61e33a01d6de17a8023c65fd",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
-						"getComments"
+						"getComments",
+						"61e33a01d6de17a8023c65fd"
 					]
 				}
 			},
@@ -301,11 +327,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/api/likeComment/61e3480ed61a8c0954e643c3",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/likeComment/61e3480ed61a8c0954e643c3",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"likeComment",
@@ -321,35 +349,17 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/api/getCommentsLike/61e3480ed61a8c0954e643c3",
+					"raw": "https://yocket-social-media-server.herokuapp.com/api/getCommentsLike/61e3480ed61a8c0954e643c3",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"yocket-social-media-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						"api",
 						"getCommentsLike",
 						"61e3480ed61a8c0954e643c3"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "undoLike",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "localhost:5000/api/undoLike/61e34889d61a8c0954e643cd",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"undoLike",
-						"61e34889d61a8c0954e643cd"
 					]
 				}
 			},
