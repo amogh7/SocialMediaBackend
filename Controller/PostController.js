@@ -4,10 +4,7 @@ const Like = require("../Models/Likes");
 const Comment = require("../Models/Comments");
 const CommentLike = require("../Models/CommentLikes");
 const jwt = require("jsonwebtoken");
-
-
 // Create a post
-
 async function createPost(req, res) {
   try {
     const user = await User.findById(req.id);
