@@ -14,20 +14,20 @@ postRouter.post("/createPost",createPost)
 postRouter.get("/getPosts",getPostsForUser)
 
 //An api to get List of users liked a post
-postRouter.get("/getLikes",getUserLikedPost)
+postRouter.get("/getLikes/:id",getUserLikedPost)
 
 //An api to like a post
-postRouter.post("/likePost",likePost)
+postRouter.post("/likePost/:id",likePost)
 
 //An api to get List of users commented on a post
-postRouter.get("/getComments",getUserCommentPost)
+postRouter.get("/getComments/:id",getUserCommentPost)
 
 //An api to get List of users liked on a comment
 postRouter.get("/getCommentsLike/:id",getUserCommentLike)
 
 postRouter.post("/undoLike/:id",undoLike)
 //An api to comment on a post
-postRouter.post("/commentPost",commentOnPost)
+postRouter.post("/commentPost/:id",commentOnPost)
 
 //An api to like a comment
 postRouter.post("/likeComment/:id",likeComment);

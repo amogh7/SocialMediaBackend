@@ -35,14 +35,10 @@ async function createPost(req, res) {
     });
   }
 }
-//get posts for a user
+//get All posts 
 async function getPostsForUser(req, res) {
   try {
-    let token = req.cookies.jwt;
-
-    const payload = jwt.verify(token, process.env.SECRET_KEY);
-
-    const allPosts = await Post.find({ user: payload.id });
+    const allPosts = await Post.find();
     res.status(200).json({
       message: "Successfully got all posts",
       posts: allPosts,
@@ -56,7 +52,7 @@ async function getPostsForUser(req, res) {
 //  Like a post 
 async function likePost(req, res) {
   try {
-    const post = await Post.findById(req.body.postId);
+    const post = await Post.findById(req.params.id);
 
     const currentUser = await User.findById(req.id);
 
@@ -65,7 +61,7 @@ async function likePost(req, res) {
       user: currentUser,
     });
 
-    let updatedPost = await Post.findByIdAndUpdate(req.body.postId, {
+    let updatedPost = await Post.findByIdAndUpdate(req.params.id, {
       $push: { likes: newLike },
     }).populate("likes");
 
@@ -122,7 +118,7 @@ async function likeComment(req, res) {
 //  comment on a post
 async function commentOnPost(req, res) {
   try {
-    const post = await Post.findById(req.body.postId);
+    const post = await Post.findById(req.params.id)
 
     const userValue = post.currentUser.toString();
     const currentUser = await User.findById(req.id);
@@ -133,12 +129,11 @@ async function commentOnPost(req, res) {
       user: currentUser,
     });
 
-    let updatedPost = await Post.findByIdAndUpdate(req.body.postId, {
+    let updatedPost = await Post.findByIdAndUpdate(req.params.id, {
       $push: { comments: newComment },
     }).populate("comments");
 
     if (currentUser["_id"].toString() !== userValue) {
-      console.log("inside if condition");
       res.status(200).json({
         message: "successfuly commentd and notified",
         data: newComment,
@@ -159,7 +154,7 @@ async function commentOnPost(req, res) {
 //get list of  users that liked the post
 async function getUserLikedPost(req, res) {
   try {
-    const post = await Post.findById(req.body.postId).populate({
+    const post = await Post.findById(req.params.id).populate({
       path: "likes",
       select: ["user"],
     });
@@ -182,7 +177,7 @@ async function getUserLikedPost(req, res) {
 //get users that commented on the post
 async function getUserCommentPost(req, res) {
   try {
-    const post = await Post.findById(req.body.postId).populate({
+    const post = await Post.findById(req.params.id).populate({
       path: "comments",
       select: ["user"],
     });
@@ -204,7 +199,7 @@ async function getUserCommentPost(req, res) {
   }
 }
 
-//get users thar like a comment
+//get users that like a comment
 async function getUserCommentLike(req, res) {
   try {
     try {
