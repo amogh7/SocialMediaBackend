@@ -15,6 +15,9 @@ app.use(cookieParser());
 app.use("/api/auth",authRouter);  
 app.use("/api",postRouter);  
 app.use("/api",userRouter);  
+app.get("/",function(req,res){
+    res.status(200).json({message:"home Route app running successfuly"})
+})
 const DB_LINK=process.env.DB_LINK;
 // console.log(DB_LINK);
 mongoose.connect(DB_LINK,{useNewUrlParser:true,useUnifiedTopology:true})
