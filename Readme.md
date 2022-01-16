@@ -31,6 +31,7 @@ A Simple Social Media  application made using MERN (MongoDB Express) stack along
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#Using-the-Rest-End-Points">Using the Rest End Points</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -84,7 +85,28 @@ To get a local copy up and running follow these simple example steps.
    Open http://localhost:5000/ for end point of server
    ```
    
-   
+<!-- Using the Rest End Points -->
+## Using-the-Rest-End-Points
+You can use postman to play around with rest end points
+* Open PostMan and Import the Yocket_Social-Media.postman-collection.json in postman from the app directory
+* Host:-https://yocket-social-media-server.herokuapp.com
+
+List of Rest End Points-
+1) Signin/Register :- /api/auth/signin
+2) Login :-/api/auth/login
+3) Logouthttps :- /api/auth/logout
+4) To check if someone is logged in:- /api/auth/isLoggedIn
+5) To create post :- /api/createPost
+6) To get All posts :-  /api/getPosts/
+7) To get All Users :- /api/getAllUsers
+8) To like a post :-   /api/likePost/:id
+9) To Comment on a post :- /api/commentPost/:id
+10) To get list of Users Liked a post :- /api/getLikes/:id
+11) To get a list of Users Commented on a Post:- /api/getComments/:id
+12) To Like a comment :- /api/likeComment/:id
+13) To get list of users that like a comment :- /api/getCommentsLike/:id
+14)  To unlike a post :- /api/undoLike/:id
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
