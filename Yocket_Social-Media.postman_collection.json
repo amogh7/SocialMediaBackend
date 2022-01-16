@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"IronMan\",\r\n    \"email\":\"IronMan@gmail.com\",\r\n    \"password\":\"Hellloa\",\r\n    \"confirmPassword\":\"Hellloa\"\r\n\r\n\r\n}",
+					"raw": "{\r\n    \"username\":\"SuperMan\",\r\n    \"email\":\"superman@gmail.com\",\r\n    \"password\":\"Hellloa\",\r\n    \"confirmPassword\":\"Hellloa\"\r\n\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -43,7 +43,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"IronMan@gmail.com\",\r\n    \"password\":\"Hellloa\"\r\n}\r\n",
+					"raw": "{\r\n    \"email\":\"superman@gmail.com\",\r\n    \"password\":\"Hellloa\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
