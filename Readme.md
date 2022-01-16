@@ -128,4 +128,8 @@ Contributions are what make the open source community such an amazing place to b
 
 Amogh Sachdeva- - amoghSachdeva3@gmail.com
 
+<<<<<<< HEAD
 Project Link: [https://github.com/amogh7/SocialMediaBackend](https://github.com/amogh7/SocialMediaBackend)
+=======
+Project Link: [https://github.com/amogh7/SocialMediaBackend](https://github.com/amogh7/SocialMediaBackend)
+>>>>>>> b13902b902b0ce4421e5151e142f17be037df4c6
